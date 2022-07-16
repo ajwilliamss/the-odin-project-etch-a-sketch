@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Etch-A-Sketch</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <div class="title">
+        <h1>Sketchpad</h1>
+      </div>
+
+      <div class="wrapper">
+        <div class="sketchpad"></div>
+        <div class="buttons">
+          <button type="button">Black</button>
+          <button type="button">White</button>
+          <button type="button">Random</button>
+          <button type="button">Reset</button>
+        </div>
+
+        <div class="size">
+          <label for="sketchpad-size">Change Size</label>
+          <input type="number" name="sketchpad-size" placeholder="Board Size" value="16"
+            onchange="changeSize(this.value)" class="sketchpad-size">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+<script src="./app.js"></script>
+
+</html>
