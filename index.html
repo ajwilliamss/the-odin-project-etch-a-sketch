@@ -16,14 +16,17 @@
       <div class="title">
         <h1>Sketchpad</h1>
       </div>
+      <div class="sketch-mode">
+        <h2 class="mode green">Sketch Mode</h2>
+      </div>
 
       <div class="wrapper">
         <div class="sketchpad"></div>
         <div class="buttons">
-          <button type="button">Black</button>
-          <button type="button">White</button>
-          <button type="button">Random</button>
-          <button type="button">Reset</button>
+          <button type="button" onclick="selectColour('black')">Black</button>
+          <button type="button" onclick="selectColour('white')">White</button>
+          <button type="button" onclick="selectColour('random')">Random</button>
+          <button type="button" onclick="resetSketchpad()">Reset</button>
         </div>
 
         <div class="size">

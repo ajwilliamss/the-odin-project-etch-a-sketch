@@ -13,8 +13,65 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sketchpad {
   display: grid;
   height: 600px;
   width: 600px;
+  border: 2px solid black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.buttons button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgrey;
+  font-size: 0.95rem;
+  transition: 0.2s linear;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sketchpad-size {
+  padding: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.title {
+  margin-top: 1rem;
+}
+
+.title,
+.sketch-mode {
+  margin-bottom: 0.75rem;
 }
